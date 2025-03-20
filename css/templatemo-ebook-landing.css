@@ -9,6 +9,7 @@ https://templatemo.com/tm-588-ebook-landing
 /*---------------------------------------
   CUSTOM PROPERTIES ( VARIABLES )             
 -----------------------------------------*/
+
 :root {
   --white-color: #ffffff;
   --primary-color: #e76f51;
@@ -417,7 +418,40 @@ strong {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.swiper{
+  margin-top: 8rem;
+  justify-self: center;
+}
 
+
+.col-md-4 img{
+  width: 20rem;
+  height: 27rem;
+  padding-right: 0;
+}
+.love{
+  background-color:white;
+  color: #f4a261;
+  border: 0;
+  font-size: 1.5rem;
+  
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  #read-later .col-sm-6 {
+      flex: 1 0 48%; /* 2 items per row on small screens */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  #read-later .col-12 {
+      flex: 1 0 100%; /* 1 item per row on very small screens */
+  }
+}
 .navbar-brand,
 .navbar-brand:hover {
   font-size: var(--h3-font-size);
@@ -918,6 +952,43 @@ strong {
   background: var(--primary-color);
   color: var(--white-color);
 }
+/*/////////////////////////////Our Edit/////////////////////////////////////////*/
+
+.carousel-control-next,
+.carousel-control-prev {
+  align-self: center;
+  height: 3rem;
+  width: 3rem;
+ background-color: #000000;
+}
+footer {
+  background-color: rgb(19, 19, 19);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  width: 100%;
+  margin-top: auto;
+  font-size: 14px;
+}
+
+/* تنسيق الروابط والأيقونات */
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #f39c12; /* لون عند التحويل */
+}
+
+/* تنسيق الأيقونات */
+.social-icons-footer i {
+  font-size: 18px;
+  margin: 0 5px;
+}
+
 
 /*---------------------------------------
   RESPONSIVE STYLES               
@@ -1024,3 +1095,14 @@ strong {
     padding: 5px 15px;
   }
 }
+@media (max-width: 768px) {
+  footer p {
+      font-size: 12px;
+  }
+
+  .social-icons-footer i {
+      font-size: 16px;
+  }
+}
+
+
